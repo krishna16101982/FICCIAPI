@@ -18,6 +18,12 @@ namespace WebApplication1.Controllers
         {
             return new string[] { "kumar", "gaurav" };
         }
+
+         [Route("get3")]
+        public IEnumerable<string> Get3()
+        {
+            return new string[] { "kumar", "gaurav" };
+        }
         [Route("get/{id}")]
         // GET: api/values/5
         public string Get(int id)
